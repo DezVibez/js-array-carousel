@@ -6,6 +6,7 @@
 #carousel {
     position: relative;
     width: 400px;
+    height: 300px;
     margin: 0 auto;
 }
 
@@ -22,7 +23,7 @@ img { width: 100%;}
     font-size: 30px;
     position: absolute;
     color: black;
-    bottom: 50%;
+    bottom: 70%;
     height: 10px;
     z-index: 1;
 }
