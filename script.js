@@ -28,9 +28,17 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 
 console.log("js ok")
 
-let images = ["img/01.jpg, img/02.jpg, img/03.jpg, img/04.jpg, img/05.jpg, img/06.jpg, img/07.jpg, img/08.jpg, img/09.jpg, img/010.jpg"]
+let imagesTarget = document.getElementById("imagesTarget")
+let indexImg
 
+
+for (let i = 1; i <= 10 ; i++){
+
+    indexImg = i
+    console.log(indexImg)
     
+}
     
 
+imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
 
