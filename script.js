@@ -28,40 +28,54 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 
 console.log("js ok")
 
-let imagesTarget = document.getElementById("imagesTarget")
+/*Assegno il target dove stamperò l'immagine */
+
+const imagesTarget = document.getElementById("imagesTarget")
+
+/*Creo la variabile globale che corrisponderà all'indice. Avendo chiamato le immagini con criterio
+in fase di stampa alle immagini sostituirò solo l'indice. Parto da 1.  */
 let indexImg = 1
+
+/*Stampo la foto numero uno */
 
 imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
 
-let buttonLeft = document.getElementById("buttonLeft")
-let buttonRight = document.getElementById("buttonRight")
+/* Targettizzo i bottoni */
+
+const buttonLeft = document.getElementById("buttonLeft")
+const buttonRight = document.getElementById("buttonRight")
+
+/* Ascolto al click. IndexImg è stata dichiarata come globale per tanto può essere
+richiamato nel "pseudo-ciclo for". Praticamente ho detto al bottone di incrementare di uno,
+la variabile IndexImg, ad ogni click. Questo è stato possibile con la linea di codice indexImg++
+Ovviamente, per tornare indietro col bottone buttonLeft, il ragionamento è lo stesso ma al contrario.
+
+-condizioni
+in buttonRight, se l'immagine è quella con l'indexImg 10, allora il giro riparte da 1 */
 
 buttonRight.addEventListener("click",function(){
-
-
 
     if (indexImg === 10) {
         indexImg = 1}
 
         else indexImg++;
     
-    
-
         imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
     
 })
 
+/*-
+
+condizioni
+in buttonRight, se l'immagine è quella con l'indexImg 1, allora il giro riparte da 10 */ 
+
 buttonLeft.addEventListener("click",function(){
-
-
 
     if (indexImg === 1) {
         indexImg = 10}
 
         else indexImg--;
-    
-    
-
+        
         imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
     
 })
