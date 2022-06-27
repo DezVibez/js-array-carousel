@@ -29,16 +29,46 @@ Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza 
 console.log("js ok")
 
 let imagesTarget = document.getElementById("imagesTarget")
-let indexImg
-
-
-for (let i = 1; i <= 10 ; i++){
-
-    indexImg = i
-    console.log(indexImg)
-    
-}
-    
+let indexImg = 1
 
 imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
+
+let buttonLeft = document.getElementById("buttonLeft")
+let buttonRight = document.getElementById("buttonRight")
+
+buttonRight.addEventListener("click",function(){
+
+
+
+    if (indexImg === 10) {
+        indexImg = 1}
+
+        else indexImg++;
+    
+    
+
+        imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
+    
+})
+
+buttonLeft.addEventListener("click",function(){
+
+
+
+    if (indexImg === 1) {
+        indexImg = 10}
+
+        else indexImg--;
+    
+    
+
+        imagesTarget.innerHTML = (`<img src="img/${indexImg}.jpg">`)
+    
+})
+
+
+    
+
+
+
 
