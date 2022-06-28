@@ -5,7 +5,7 @@
 
 #carousel {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 300px;
     margin: 0 auto;
 }
@@ -25,7 +25,7 @@ img { height: 100%;
     font-size: 30px;
     position: absolute;
     color: black;
-    bottom: 70%;
+    bottom: 55%;
     height: 10px;
     z-index: 1;
 }
