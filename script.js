@@ -23,7 +23,7 @@ Al click dell'utente sulle frecce, l'immagine attiva cambia e diventa visibile n
 BONUS 1:
 Aggiungere il ciclo infinito del carosello. Ovvero se l' immagine attiva è la prima e l'utente clicca la freccia per andare indietro, la miniatura che deve attivarsi sarà l'ultima e viceversa per l'ultima miniatura se l'utente clicca la freccia verso avanti, deve attivarsi la prima immgine.
 BONUS 2:
-Creiamo delle miniature di tutte le immagni, in cui dovrà apparire in evidenza l’immagine equivalente a quella attiva, scegliete liberamente se scurire le altre immagini oppure se evidenziarla semplicemente con un bordo. Tra queste miniature, quella corrispondente all'immagine attiva deve evidenziarsi, scegliete voi l'effetto estetico, potete colorarla diversamente rispetto alle altre o aggiungere un semplice bordo.
+Creiamo delle miniature di tutte le immagini, in cui dovrà apparire in evidenza l’immagine equivalente a quella attiva, scegliete liberamente se scurire le altre immagini oppure se evidenziarla semplicemente con un bordo. Tra queste miniature, quella corrispondente all'immagine attiva deve evidenziarsi, scegliete voi l'effetto estetico, potete colorarla diversamente rispetto alle altre o aggiungere un semplice bordo.
 */
 
 console.log("js ok")
@@ -46,8 +46,9 @@ const buttonLeft = document.getElementById("buttonLeft")
 const buttonRight = document.getElementById("buttonRight")
 
 /* Ascolto al click. IndexImg è stata dichiarata come globale per tanto può essere
-richiamato nel "pseudo-ciclo for". Praticamente ho detto al bottone di incrementare di uno,
+richiamata nel "pseudo-ciclo for". Praticamente ho detto al bottone di incrementare di uno,
 la variabile IndexImg, ad ogni click. Questo è stato possibile con la linea di codice indexImg++
+(può essere scritto anche come indexImg += ).
 Ovviamente, per tornare indietro col bottone buttonLeft, il ragionamento è lo stesso ma al contrario.
 
 -condizioni

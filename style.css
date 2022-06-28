@@ -17,7 +17,9 @@
     object-fit: cover;
 }
 
-img { width: 100%;}
+img { height: 100%;
+    width: 100%;
+    object-fit: cover;}
 
 #carousel i{
     font-size: 30px;
